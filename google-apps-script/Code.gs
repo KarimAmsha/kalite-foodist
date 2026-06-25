@@ -62,7 +62,13 @@ function doPost(e) {
       return data[key] || '';
     });
 
-    sheet.appendRow(row);
+    // Write into the next row as PLAIN TEXT so values like "+90..." are not
+    // parsed as formulas (which produced #ERROR!) and to block formula
+    // injection (=, +, -, @).
+    var targetRow = sheet.getLastRow() + 1;
+    var range = sheet.getRange(targetRow, 1, 1, COLUMNS.length);
+    range.setNumberFormat('@');
+    range.setValues([row]);
 
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true }))
