@@ -3,6 +3,7 @@ import { SectionTitle } from '@/components/ui/SectionTitle';
 import { Reveal } from '@/components/ui/Reveal';
 import { Card } from '@/components/ui/Card';
 import { productFamilies } from '@/content/catalogues';
+import { ArrowIcon } from '@/components/ui/icons';
 
 const accentBar: Record<string, string> = {
   red: 'bg-kalite-red',
@@ -22,19 +23,30 @@ export function ProductFamiliesSection() {
   return (
     <section id="products" className="section-pad">
       <div className="container-px">
-        <SectionTitle title={t('title')} subtitle={t('subtitle')} />
+        <SectionTitle eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {productFamilies.map((b, i) => (
             <Reveal key={b.key} delay={i * 0.07}>
-              <Card glass className="relative h-full overflow-hidden p-6">
+              <Card glass className="relative flex h-full flex-col overflow-hidden p-6">
                 <span className={`absolute inset-x-0 top-0 h-1.5 ${accentBar[b.accent]}`} />
                 <p className={`font-heading text-2xl font-bold ${accentText[b.accent]}`}>
                   {b.name}
                 </p>
-                <p className="mt-3 text-sm leading-relaxed text-kalite-brown/75">
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-kalite-brown/75">
                   {t(`${b.key}.tagline`)}
                 </p>
+                {b.website && (
+                  <a
+                    href={b.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-1.5 text-xs font-semibold text-kalite-red"
+                  >
+                    {t('visitBrand')}
+                    <ArrowIcon className="h-3.5 w-3.5 rtl:rotate-180" />
+                  </a>
+                )}
               </Card>
             </Reveal>
           ))}

@@ -35,7 +35,7 @@ export function EventInfoSection() {
   return (
     <section id="event" className="section-pad">
       <div className="container-px">
-        <SectionTitle title={t('title')} subtitle={t('subtitle')} />
+        <SectionTitle eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-3">
           {cards.map((c, i) => (

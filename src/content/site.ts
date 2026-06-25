@@ -17,19 +17,31 @@ export const eventData = {
 
 export const company = {
   name: 'Kalite Çikolata',
-  legalName: 'Kalite Çikolata Gıda San. Tic. A.Ş. / EUROSWEET GIDA LTD. ŞTİ.',
-  email: 'export@kalitecikolata.com',
+  legalName: 'EUROSWEET GIDA LTD. ŞTİ. · KALİTE ÇİKOLATA GIDA SAN. TİC. A.Ş.',
+  email: 'info@kalitecikolata.com.tr',
+  website: 'https://kalitecikolata.com.tr',
+  phone: '+90 (212) 803 60 00',
+  phoneHref: '+902128036000',
+  address:
+    'Mahmut Bey Mah. Taşocağıyolu Cad. No:3 B Blok, Ağaoğlu My Office 212, K:29 D:488, Bağcılar / Istanbul',
+} as const;
+
+// House of brands — links go to each brand's official site.
+export const brands = {
+  kalite: { name: 'Kalite Çikolata', website: 'https://kalitecikolata.com.tr', email: 'info@kalitecikolata.com.tr' },
+  nukka: { name: 'NUKKA', website: 'https://nukka.com.tr', email: 'info@nukka.com.tr' },
+  prosweet: { name: 'PROSWEET', website: 'https://prosweet.com.tr', email: 'info@prosweet.com.tr' },
 } as const;
 
 export const socials = {
   instagram: 'https://instagram.com/kalitecikolata',
   linkedin: 'https://www.linkedin.com/company/kalite-cikolata',
-  website: 'https://kalitecikolata.com',
+  website: 'https://kalitecikolata.com.tr',
 } as const;
 
 // Read at module scope so the values are inlined at build time.
 export const env = {
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '905520802916',
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '905382319857',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://kalite-foodist-2026.vercel.app',
   defaultLocale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE || 'en',
   googleFormFallbackUrl: process.env.NEXT_PUBLIC_GOOGLE_FORM_FALLBACK_URL || '',
@@ -42,3 +54,7 @@ export function whatsappLink(message: string): string {
   const base = `https://wa.me/${env.whatsappNumber}`;
   return message ? `${base}?text=${encodeURIComponent(message)}` : base;
 }
+
+export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  eventData.mapsQuery,
+)}`;

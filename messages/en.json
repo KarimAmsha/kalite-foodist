@@ -9,6 +9,7 @@
     "products": "Products",
     "catalogues": "Catalogues",
     "team": "Team",
+    "visit": "Visit Us",
     "contact": "Contact",
     "bookMeeting": "Book a Meeting",
     "skipToContent": "Skip to content"
@@ -26,9 +27,19 @@
     "bookMeeting": "Book a B2B Meeting",
     "downloadCatalogues": "Download Catalogues",
     "whatsapp": "Chat on WhatsApp",
-    "boothLabel": "Find us at"
+    "boothLabel": "Find us at",
+    "metaDate": "Date",
+    "metaVenue": "Venue",
+    "metaBooth": "Booth",
+    "passLabel": "Stand Pass",
+    "passVisit": "Visit our stand"
+  },
+  "brandsStrip": {
+    "label": "A house of three brands",
+    "visit": "Visit site"
   },
   "event": {
+    "eyebrow": "The event",
     "title": "Event details",
     "subtitle": "Everything you need to find us at the fair.",
     "dateLabel": "Date",
@@ -37,6 +48,7 @@
     "getDirections": "Get directions"
   },
   "whyVisit": {
+    "eyebrow": "Why us",
     "title": "Why visit Kalite at the fair",
     "subtitle": "Four reasons to stop by Hall 1 / Stand 151B.",
     "points": {
@@ -59,14 +71,17 @@
     }
   },
   "brands": {
+    "eyebrow": "Our products",
     "title": "Product families",
     "subtitle": "A focused range built for retail shelves and wholesale channels.",
+    "visitBrand": "Visit brand site",
     "nukka": { "tagline": "Our main, diverse confectionery range." },
     "prosweet": { "tagline": "Wafer and snack lines for fast-moving channels." },
-    "jellyFunny": { "tagline": "Gummy and candy products with playful, shelf-ready packaging." },
+    "jellyFunny": { "tagline": "Gummy and jelly products with playful, shelf-ready packaging." },
     "newProducts": { "tagline": "The latest additions we are launching at the fair." }
   },
   "catalogues": {
+    "eyebrow": "Downloads",
     "title": "Catalogues",
     "subtitle": "Open or download our latest PDF catalogues.",
     "download": "Download PDF",
@@ -81,6 +96,7 @@
     "whatsappMessage": "Hello Kalite, I would like to request the {brand} catalogue."
   },
   "team": {
+    "eyebrow": "The team",
     "title": "Meet our team",
     "subtitle": "Talk to the people who can move your order forward.",
     "contact": "Contact",
@@ -89,6 +105,7 @@
     }
   },
   "form": {
+    "formEyebrow": "Get in touch",
     "title": "Book a meeting or request a catalogue",
     "subtitle": "Tell us a little about your business and we will follow up quickly.",
     "fields": {
@@ -143,6 +160,7 @@
     }
   },
   "faq": {
+    "eyebrow": "FAQ",
     "title": "Frequently asked questions",
     "items": {
       "where": {
@@ -163,9 +181,24 @@
       }
     }
   },
+  "contact": {
+    "eyebrow": "Visit us",
+    "title": "Come meet us in Istanbul",
+    "subtitle": "Reach our export team before or during the fair.",
+    "addressLabel": "Head office",
+    "phoneLabel": "Tel / Fax",
+    "emailLabel": "Email",
+    "whatsapp": "Message on WhatsApp",
+    "directions": "Get directions",
+    "boothEyebrow": "Our stand",
+    "boothTitle": "We'll be ready to welcome you at Hall 1 / Stand 151B.",
+    "dateShort": "Days",
+    "yearShort": "Year"
+  },
   "footer": {
     "tagline": "From Istanbul to global shelves.",
     "quickLinks": "Quick links",
+    "brandsTitle": "Our brands",
     "cataloguesTitle": "Catalogues",
     "contactTitle": "Contact",
     "follow": "Follow us",

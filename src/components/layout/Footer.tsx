@@ -1,12 +1,11 @@
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { catalogues } from '@/content/catalogues';
-import { company, socials, eventData, whatsappLink, env } from '@/content/site';
-import { WhatsAppIcon, MailIcon } from '@/components/ui/icons';
+import { company, brands, socials, eventData, whatsappLink } from '@/content/site';
+import { WhatsAppIcon, MailIcon, MapPinIcon } from '@/components/ui/icons';
 
 export function Footer() {
   const t = useTranslations('footer');
-  const tc = useTranslations('catalogues');
   const tn = useTranslations('nav');
   const tw = useTranslations('whatsapp');
   const year = new Date().getFullYear();
@@ -16,28 +15,60 @@ export function Footer() {
     { href: '#products', label: tn('products') },
     { href: '#catalogues', label: tn('catalogues') },
     { href: '#team', label: tn('team') },
-    { href: '#contact', label: tn('contact') },
+    { href: '#visit', label: tn('visit') },
   ];
 
+  const brandList = [brands.kalite, brands.nukka, brands.prosweet];
+
   return (
-    <footer className="bg-kalite-brown text-kalite-cream">
-      <div className="container-px py-14">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-brown-sheen text-kalite-cream">
+      <div className="container-px py-16">
+        <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div>
             <div className="flex items-center gap-2.5">
               <span className="grid h-9 w-9 place-items-center rounded-lg bg-kalite-red font-heading text-lg font-bold text-white">
                 K
               </span>
               <span className="font-heading text-lg font-bold">Kalite Çikolata</span>
             </div>
-            <p className="mt-4 max-w-xs text-sm text-kalite-cream/70">{t('tagline')}</p>
-            <p className="mt-4 text-xs font-medium text-kalite-gold">{t('booth')}</p>
+            <p className="mt-4 max-w-xs text-sm text-kalite-cream/65">{t('tagline')}</p>
+            <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-kalite-gold/30 px-3 py-1.5 text-xs font-semibold text-kalite-gold-soft">
+              {t('booth')}
+            </p>
+          </div>
+
+          {/* Our brands */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-kalite-gold-soft">
+              {t('brandsTitle')}
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              {brandList.map((b) => (
+                <li key={b.name}>
+                  <a href={b.website} target="_blank" rel="noopener noreferrer" className="text-kalite-cream/80 transition hover:text-white">
+                    {b.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <h3 className="mt-6 text-sm font-semibold uppercase tracking-wide text-kalite-gold-soft">
+              {t('cataloguesTitle')}
+            </h3>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              {catalogues.map((c) => (
+                <li key={c.key}>
+                  <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-kalite-cream/80 transition hover:text-white">
+                    {c.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Quick links */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-kalite-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-kalite-gold-soft">
               {t('quickLinks')}
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm">
@@ -51,67 +82,46 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Catalogues */}
-          <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-kalite-gold">
-              {t('cataloguesTitle')}
-            </h3>
-            <ul className="mt-4 space-y-2.5 text-sm">
-              {catalogues.map((c) => (
-                <li key={c.key}>
-                  <a
-                    href={c.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-kalite-cream/80 transition hover:text-white"
-                  >
-                    {c.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-kalite-gold">
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-kalite-gold-soft">
               {t('contactTitle')}
             </h3>
-            <ul className="mt-4 space-y-3 text-sm">
+            <ul className="mt-4 space-y-3.5 text-sm">
+              <li className="flex items-start gap-2.5 text-kalite-cream/75">
+                <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-kalite-gold-soft" />
+                <span className="leading-relaxed">{company.address}</span>
+              </li>
               <li>
-                <a
-                  href={whatsappLink(tw('default'))}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-kalite-cream/80 transition hover:text-white"
-                >
-                  <WhatsAppIcon className="h-4 w-4" /> WhatsApp
+                <a href={`tel:${company.phoneHref}`} className="text-kalite-cream/80 transition hover:text-white">
+                  {company.phone}
                 </a>
               </li>
               <li>
-                <a
-                  href={`mailto:${company.email}`}
-                  className="inline-flex items-center gap-2 text-kalite-cream/80 transition hover:text-white"
-                >
+                <a href={`mailto:${company.email}`} className="inline-flex items-center gap-2 text-kalite-cream/80 transition hover:text-white">
                   <MailIcon className="h-4 w-4" /> {company.email}
                 </a>
               </li>
+              <li>
+                <a href={whatsappLink(tw('default'))} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-kalite-cream/80 transition hover:text-white">
+                  <WhatsAppIcon className="h-4 w-4" /> WhatsApp
+                </a>
+              </li>
             </ul>
-            <p className="mt-5 text-xs text-kalite-cream/60">{t('follow')}</p>
-            <div className="mt-2 flex gap-3 text-sm">
-              <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="text-kalite-cream/80 hover:text-white">
+            <div className="mt-5 flex gap-3 text-sm">
+              <a href={socials.instagram} target="_blank" rel="noopener noreferrer" className="text-kalite-cream/70 hover:text-white">
                 Instagram
               </a>
-              <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-kalite-cream/80 hover:text-white">
+              <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-kalite-cream/70 hover:text-white">
                 LinkedIn
               </a>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-kalite-cream/15 pt-6">
-          <p className="text-xs text-kalite-cream/60">{company.legalName}</p>
-          <p className="mt-2 text-xs text-kalite-cream/50">
+        <div className="mt-14 border-t border-kalite-cream/15 pt-6">
+          <p className="text-xs text-kalite-cream/55">{company.legalName}</p>
+          <p className="mt-2 text-xs text-kalite-cream/45">
             © {year} Kalite Çikolata. {t('rights')} · {eventData.city}
           </p>
         </div>

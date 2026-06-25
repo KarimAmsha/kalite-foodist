@@ -9,6 +9,7 @@
     "products": "Ürünler",
     "catalogues": "Kataloglar",
     "team": "Ekip",
+    "visit": "Bizi Ziyaret Edin",
     "contact": "İletişim",
     "bookMeeting": "Toplantı Planla",
     "skipToContent": "İçeriğe geç"
@@ -26,9 +27,19 @@
     "bookMeeting": "B2B Toplantı Planla",
     "downloadCatalogues": "Katalogları İndir",
     "whatsapp": "WhatsApp'tan yazın",
-    "boothLabel": "Bizi bulun"
+    "boothLabel": "Bizi bulun",
+    "metaDate": "Tarih",
+    "metaVenue": "Mekan",
+    "metaBooth": "Stant",
+    "passLabel": "Stant Kartı",
+    "passVisit": "Standımızı ziyaret edin"
+  },
+  "brandsStrip": {
+    "label": "Üç markalı bir çatı",
+    "visit": "Siteye git"
   },
   "event": {
+    "eyebrow": "Fuar",
     "title": "Fuar bilgileri",
     "subtitle": "Bizi fuarda bulmanız için gereken her şey.",
     "dateLabel": "Tarih",
@@ -37,6 +48,7 @@
     "getDirections": "Yol tarifi al"
   },
   "whyVisit": {
+    "eyebrow": "Neden biz",
     "title": "Fuarda Kalite'yi neden ziyaret etmelisiniz",
     "subtitle": "Salon 1 / Stant 151B'ye uğramak için dört neden.",
     "points": {
@@ -59,14 +71,17 @@
     }
   },
   "brands": {
+    "eyebrow": "Ürünlerimiz",
     "title": "Ürün aileleri",
     "subtitle": "Perakende rafları ve toptan kanallar için odaklı bir seri.",
+    "visitBrand": "Marka sitesi",
     "nukka": { "tagline": "Ana ve çeşitli şekerleme serimiz." },
     "prosweet": { "tagline": "Hızlı tüketim kanalları için gofret ve atıştırmalık serileri." },
-    "jellyFunny": { "tagline": "Eğlenceli, rafa hazır ambalajlı yumuşak şeker ürünleri." },
+    "jellyFunny": { "tagline": "Eğlenceli, rafa hazır ambalajlı yumuşak şeker ve jöle ürünleri." },
     "newProducts": { "tagline": "Fuarda tanıttığımız en yeni ürünler." }
   },
   "catalogues": {
+    "eyebrow": "İndirilenler",
     "title": "Kataloglar",
     "subtitle": "En güncel PDF kataloglarımızı açın veya indirin.",
     "download": "PDF indir",
@@ -81,6 +96,7 @@
     "whatsappMessage": "Merhaba Kalite, {brand} kataloğunu talep etmek istiyorum."
   },
   "team": {
+    "eyebrow": "Ekip",
     "title": "Ekibimizle tanışın",
     "subtitle": "Siparişinizi ilerletecek kişilerle konuşun.",
     "contact": "İletişim",
@@ -89,6 +105,7 @@
     }
   },
   "form": {
+    "formEyebrow": "İletişime geçin",
     "title": "Toplantı planlayın veya katalog talep edin",
     "subtitle": "İşletmeniz hakkında biraz bilgi verin, en kısa sürede dönüş yapalım.",
     "fields": {
@@ -143,6 +160,7 @@
     }
   },
   "faq": {
+    "eyebrow": "SSS",
     "title": "Sıkça sorulan sorular",
     "items": {
       "where": {
@@ -163,9 +181,24 @@
       }
     }
   },
+  "contact": {
+    "eyebrow": "Bizi ziyaret edin",
+    "title": "İstanbul'da bizimle buluşun",
+    "subtitle": "Fuardan önce veya fuar sırasında ihracat ekibimize ulaşın.",
+    "addressLabel": "Merkez ofis",
+    "phoneLabel": "Tel / Faks",
+    "emailLabel": "E-posta",
+    "whatsapp": "WhatsApp'tan yazın",
+    "directions": "Yol tarifi al",
+    "boothEyebrow": "Standımız",
+    "boothTitle": "Salon 1 / Stant 151B'de sizi ağırlamaya hazır olacağız.",
+    "dateShort": "Gün",
+    "yearShort": "Yıl"
+  },
   "footer": {
     "tagline": "İstanbul'dan dünya raflarına.",
     "quickLinks": "Hızlı bağlantılar",
+    "brandsTitle": "Markalarımız",
     "cataloguesTitle": "Kataloglar",
     "contactTitle": "İletişim",
     "follow": "Bizi takip edin",

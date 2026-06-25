@@ -1,6 +1,6 @@
 // Team contacts shown in the "Meet our team" section.
 // Per the brief: only approved staff, no photos unless professional approved
-// images exist, and only publish numbers after management approval.
+// images exist. More members will be added later.
 
 export interface TeamMember {
   name: string;
@@ -10,15 +10,20 @@ export interface TeamMember {
   markets: string;
   /** International WhatsApp number, no '+'. Empty hides the WhatsApp button. */
   whatsapp?: string;
+  /** Display phone (tel/fax). */
+  phone?: string;
+  phoneHref?: string;
   email?: string;
 }
 
 export const team: TeamMember[] = [
   {
-    name: 'Karim Othman',
+    name: 'Kerim Othman',
     roleKey: 'salesSpecialist',
-    markets: 'EN · AR · Middle East',
-    whatsapp: '905520802916',
-    email: 'export@kalitecikolata.com',
+    markets: 'EN · AR · TR',
+    whatsapp: '905382319857',
+    phone: '+90 (212) 803 60 00',
+    phoneHref: '+902128036000',
+    email: 'info@kalitecikolata.com.tr',
   },
 ];

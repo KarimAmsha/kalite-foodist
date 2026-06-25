@@ -71,7 +71,7 @@ export function LeadFormSection() {
     <section id="contact" className="section-pad">
       <div className="container-px">
         <div className="mx-auto max-w-2xl">
-          <SectionTitle title={t('title')} subtitle={t('subtitle')} />
+          <SectionTitle eyebrow={t('formEyebrow')} title={t('title')} subtitle={t('subtitle')} />
 
           <form
             onSubmit={handleSubmit(onSubmit)}

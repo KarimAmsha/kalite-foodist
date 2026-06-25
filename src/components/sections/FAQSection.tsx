@@ -10,7 +10,7 @@ export function FAQSection() {
   return (
     <section className="section-pad bg-white/50">
       <div className="container-px">
-        <SectionTitle title={t('title')} />
+        <SectionTitle eyebrow={t('eyebrow')} title={t('title')} />
 
         <div className="mx-auto mt-10 max-w-2xl space-y-3">
           {items.map((key, i) => (

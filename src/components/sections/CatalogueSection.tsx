@@ -13,7 +13,7 @@ export function CatalogueSection() {
   return (
     <section id="catalogues" className="section-pad bg-white/50">
       <div className="container-px">
-        <SectionTitle title={t('title')} subtitle={t('subtitle')} />
+        <SectionTitle eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
           {catalogues.map((c, i) => {
