@@ -3,7 +3,8 @@
 import { motion, useReducedMotion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/Button';
-import { eventData, whatsappLink } from '@/content/site';
+import { BrandLogo } from '@/components/ui/BrandLogo';
+import { eventData, whatsappLink, logos } from '@/content/site';
 import { WhatsAppIcon, CalendarIcon, DownloadIcon, MapPinIcon, BoothIcon } from '@/components/ui/icons';
 
 export function HeroSection() {
@@ -128,8 +129,17 @@ function StandPass({ t }: { t: ReturnType<typeof useTranslations> }) {
           <span className="grid h-11 w-11 place-items-center rounded-xl bg-kalite-red font-heading text-xl font-bold text-white">
             K
           </span>
-          <span className="rounded-full border border-kalite-gold/40 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-kalite-gold-soft">
-            {t('passLabel')}
+          <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5">
+            <BrandLogo
+              src={logos.foodist}
+              alt="Foodist Istanbul 2026"
+              imgClassName="h-5 w-auto"
+              fallback={
+                <span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-kalite-red">
+                  {t('passLabel')}
+                </span>
+              }
+            />
           </span>
         </div>
 

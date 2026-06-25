@@ -1,5 +1,6 @@
 import { useTranslations } from 'next-intl';
 import { brands } from '@/content/site';
+import { BrandLogo } from '@/components/ui/BrandLogo';
 import { ArrowIcon } from '@/components/ui/icons';
 
 const items = [
@@ -24,10 +25,15 @@ export function BrandsStrip() {
               href={b.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-3 rounded-2xl border border-kalite-brown/10 bg-white px-5 py-4 shadow-card transition hover:-translate-y-0.5 hover:shadow-glow"
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-kalite-brown/10 bg-white px-6 py-5 shadow-card transition hover:-translate-y-0.5 hover:shadow-glow"
             >
-              <span className={`font-heading text-lg font-bold ${b.accent}`}>{b.name}</span>
-              <span className="inline-flex items-center gap-1 text-xs font-semibold text-kalite-brown/50 transition group-hover:text-kalite-red">
+              <BrandLogo
+                src={b.logo}
+                alt={b.name}
+                imgClassName="h-9 w-auto max-w-[150px] object-contain"
+                fallback={<span className={`font-heading text-lg font-bold ${b.accent}`}>{b.name}</span>}
+              />
+              <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-kalite-brown/50 transition group-hover:text-kalite-red">
                 {t('visit')}
                 <ArrowIcon className="h-3.5 w-3.5 transition group-hover:translate-x-0.5 rtl:rotate-180 rtl:group-hover:-translate-x-0.5" />
               </span>

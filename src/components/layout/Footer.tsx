@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
 import { catalogues } from '@/content/catalogues';
-import { company, brands, socials, eventData, whatsappLink } from '@/content/site';
+import { company, brands, socials, eventData, whatsappLink, logos } from '@/content/site';
+import { BrandLogo } from '@/components/ui/BrandLogo';
 import { WhatsAppIcon, MailIcon, MapPinIcon } from '@/components/ui/icons';
 
 export function Footer() {
@@ -26,16 +26,32 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-lg bg-kalite-red font-heading text-lg font-bold text-white">
-                K
-              </span>
-              <span className="font-heading text-lg font-bold">Kalite Çikolata</span>
-            </div>
+            <span className="inline-flex rounded-xl bg-white px-4 py-3 shadow-soft">
+              <BrandLogo
+                src={logos.kalite}
+                alt="Kalite Çikolata"
+                imgClassName="h-10 w-auto"
+                fallback={<span className="font-heading text-lg font-bold text-kalite-red">Kalite Çikolata</span>}
+              />
+            </span>
             <p className="mt-4 max-w-xs text-sm text-kalite-cream/65">{t('tagline')}</p>
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-kalite-gold/30 px-3 py-1.5 text-xs font-semibold text-kalite-gold-soft">
               {t('booth')}
             </p>
+
+            <div className="mt-6">
+              <p className="text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-kalite-cream/45">
+                {t('exhibitingAt')}
+              </p>
+              <span className="mt-2 inline-flex rounded-lg bg-white px-3 py-2">
+                <BrandLogo
+                  src={logos.foodist}
+                  alt="Foodist Istanbul 2026"
+                  imgClassName="h-7 w-auto"
+                  fallback={<span className="font-heading text-sm font-bold text-kalite-red">Foodist Istanbul</span>}
+                />
+              </span>
+            </div>
           </div>
 
           {/* Our brands */}

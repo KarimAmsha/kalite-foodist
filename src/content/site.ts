@@ -28,9 +28,32 @@ export const company = {
 
 // House of brands — links go to each brand's official site.
 export const brands = {
-  kalite: { name: 'Kalite Çikolata', website: 'https://kalitecikolata.com.tr', email: 'info@kalitecikolata.com.tr' },
-  nukka: { name: 'NUKKA', website: 'https://nukka.com.tr', email: 'info@nukka.com.tr' },
-  prosweet: { name: 'PROSWEET', website: 'https://prosweet.com.tr', email: 'info@prosweet.com.tr' },
+  kalite: {
+    name: 'Kalite Çikolata',
+    website: 'https://kalitecikolata.com.tr',
+    email: 'info@kalitecikolata.com.tr',
+    logo: '/assets/logos/kalite-cikolata.png',
+  },
+  nukka: {
+    name: 'NUKKA',
+    website: 'https://nukka.com.tr',
+    email: 'info@nukka.com.tr',
+    logo: '/assets/logos/nukka.png',
+  },
+  prosweet: {
+    name: 'PROSWEET',
+    website: 'https://prosweet.com.tr',
+    email: 'info@prosweet.com.tr',
+    logo: '/assets/logos/prosweet.png',
+  },
+} as const;
+
+// Logo asset paths (drop the files into public/assets/logos/).
+export const logos = {
+  kalite: '/assets/logos/kalite-cikolata.png',
+  nukka: '/assets/logos/nukka.png',
+  prosweet: '/assets/logos/prosweet.png',
+  foodist: '/assets/logos/foodist-istanbul.png',
 } as const;
 
 export const socials = {

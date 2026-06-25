@@ -5,6 +5,8 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import { Button } from '@/components/ui/Button';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
+import { BrandLogo } from '@/components/ui/BrandLogo';
+import { logos } from '@/content/site';
 
 export function Header() {
   const t = useTranslations('nav');
@@ -42,12 +44,22 @@ export function Header() {
 
       <nav className="container-px flex h-16 items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2.5" aria-label="Kalite Çikolata">
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-kalite-red font-heading text-lg font-bold text-white shadow-soft">
-            K
-          </span>
-          <span className="hidden font-heading text-lg font-bold tracking-tight text-kalite-brown sm:block">
-            Kalite <span className="text-kalite-red">Çikolata</span>
-          </span>
+          <BrandLogo
+            src={logos.kalite}
+            alt="Kalite Çikolata"
+            eager
+            imgClassName="h-9 w-auto sm:h-10"
+            fallback={
+              <span className="flex items-center gap-2.5">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-kalite-red font-heading text-lg font-bold text-white shadow-soft">
+                  K
+                </span>
+                <span className="hidden font-heading text-lg font-bold tracking-tight text-kalite-brown sm:block">
+                  Kalite <span className="text-kalite-red">Çikolata</span>
+                </span>
+              </span>
+            }
+          />
         </Link>
 
         <div className="hidden items-center gap-7 md:flex">
