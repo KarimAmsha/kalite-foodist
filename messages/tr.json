@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Kalite Çikolata Foodist İstanbul 2026'da | Salon 1 Stant 151B",
+    "description": "Kalite Çikolata ile Foodist İstanbul 2026'da buluşun, 1-4 Eylül, Tüyap Fuar ve Kongre Merkezi, İstanbul. Çikolata, gofret, bisküvi, kek ve yumuşak şeker ürünlerimizi keşfedin. Salon 1 / Stant 151B.",
+    "ogAlt": "Foodist İstanbul 2026'da Kalite Çikolata — Salon 1 / Stant 151B"
+  },
+  "nav": {
+    "event": "Fuar",
+    "products": "Ürünler",
+    "catalogues": "Kataloglar",
+    "team": "Ekip",
+    "contact": "İletişim",
+    "bookMeeting": "Toplantı Planla",
+    "skipToContent": "İçeriğe geç"
+  },
+  "language": {
+    "label": "Dil",
+    "en": "English",
+    "tr": "Türkçe",
+    "ar": "العربية"
+  },
+  "hero": {
+    "eyebrow": "Foodist İstanbul 2026 · Uluslararası Gıda ve İçecek Fuarı",
+    "title": "Kalite Çikolata ile Foodist İstanbul 2026'da buluşun",
+    "subtitle": "İstanbul'dan dünya raflarına — Türkiye'den ihracata hazır şekerleme serileri.",
+    "bookMeeting": "B2B Toplantı Planla",
+    "downloadCatalogues": "Katalogları İndir",
+    "whatsapp": "WhatsApp'tan yazın",
+    "boothLabel": "Bizi bulun"
+  },
+  "event": {
+    "title": "Fuar bilgileri",
+    "subtitle": "Bizi fuarda bulmanız için gereken her şey.",
+    "dateLabel": "Tarih",
+    "venueLabel": "Mekan",
+    "boothLabel": "Stant",
+    "getDirections": "Yol tarifi al"
+  },
+  "whyVisit": {
+    "title": "Fuarda Kalite'yi neden ziyaret etmelisiniz",
+    "subtitle": "Salon 1 / Stant 151B'ye uğramak için dört neden.",
+    "points": {
+      "newProducts": {
+        "title": "Yeni ürünler",
+        "body": "En yeni lansmanlarımızı ve sezonluk eklemelerimizi pazara çıkmadan görün."
+      },
+      "exportReady": {
+        "title": "İhracata hazır",
+        "body": "Uluslararası dağıtım için hazırlanmış dokümantasyon, ambalaj ve lojistik."
+      },
+      "variety": {
+        "title": "Geniş çeşitlilik",
+        "body": "Birçok SKU ve gramajda çikolata, gofret, bisküvi, kek ve yumuşak şeker serileri."
+      },
+      "team": {
+        "title": "Özel satış ekibi",
+        "body": "Pazarınız ve ürün uyumu hakkında ihracat ekibimizle doğrudan konuşun."
+      }
+    }
+  },
+  "brands": {
+    "title": "Ürün aileleri",
+    "subtitle": "Perakende rafları ve toptan kanallar için odaklı bir seri.",
+    "nukka": { "tagline": "Ana ve çeşitli şekerleme serimiz." },
+    "prosweet": { "tagline": "Hızlı tüketim kanalları için gofret ve atıştırmalık serileri." },
+    "jellyFunny": { "tagline": "Eğlenceli, rafa hazır ambalajlı yumuşak şeker ürünleri." },
+    "newProducts": { "tagline": "Fuarda tanıttığımız en yeni ürünler." }
+  },
+  "catalogues": {
+    "title": "Kataloglar",
+    "subtitle": "En güncel PDF kataloglarımızı açın veya indirin.",
+    "download": "PDF indir",
+    "requestWhatsapp": "WhatsApp'tan talep et",
+    "spotlight": "Fuarda yeni",
+    "items": {
+      "newProducts": "Foodist İstanbul 2026 için yeni lansmanların öne çıkan kataloğu.",
+      "nukka": "Temel şekerleme kategorilerimizde ana NUKKA serisi.",
+      "prosweet": "PROSWEET gofret ve atıştırmalık serileri.",
+      "jellyFunny": "Jelly Funny yumuşak şeker ve şekerleme seçkisi."
+    },
+    "whatsappMessage": "Merhaba Kalite, {brand} kataloğunu talep etmek istiyorum."
+  },
+  "team": {
+    "title": "Ekibimizle tanışın",
+    "subtitle": "Siparişinizi ilerletecek kişilerle konuşun.",
+    "contact": "İletişim",
+    "roles": {
+      "salesSpecialist": "Satış Uzmanı"
+    }
+  },
+  "form": {
+    "title": "Toplantı planlayın veya katalog talep edin",
+    "subtitle": "İşletmeniz hakkında biraz bilgi verin, en kısa sürede dönüş yapalım.",
+    "fields": {
+      "fullName": "Ad soyad",
+      "company": "Firma adı",
+      "country": "Ülke",
+      "phone": "Telefon / WhatsApp",
+      "email": "E-posta",
+      "interestType": "İlgilendiğim konu",
+      "interestedBrand": "İlgilenilen marka",
+      "preferredMeetingDate": "Tercih edilen toplantı tarihi",
+      "message": "Mesaj"
+    },
+    "placeholders": {
+      "fullName": "örn. Ayşe Yılmaz",
+      "company": "örn. Global Foods Ltd.",
+      "country": "örn. Birleşik Arap Emirlikleri",
+      "phone": "+90 5xx xxx xx xx",
+      "email": "siz@firma.com",
+      "message": "Bilmemizi istediğiniz her şey"
+    },
+    "optional": "isteğe bağlı",
+    "interest": {
+      "catalogue": "Katalog",
+      "meeting": "Toplantı",
+      "quotation": "Fiyat teklifi",
+      "samples": "Numune",
+      "distribution": "Dağıtım"
+    },
+    "brandChoice": {
+      "kalite": "Kalite",
+      "nukka": "NUKKA",
+      "prosweet": "PROSWEET",
+      "jellyFunny": "Jelly Funny",
+      "newProducts": "Yeni Ürünler",
+      "none": "Henüz emin değilim"
+    },
+    "consent": "Talebinizle ilgili sizinle iletişime geçeceğiz. Bilgilerinizi üçüncü taraflarla paylaşmıyoruz.",
+    "submit": "Talebi gönder",
+    "submitting": "Gönderiliyor…",
+    "fallback": "Sorun mu yaşıyorsunuz? Yedek formumuzu kullanın.",
+    "errors": {
+      "fullName": "Lütfen adınızı girin.",
+      "company": "Lütfen firma adınızı girin.",
+      "country": "Lütfen ülkenizi girin.",
+      "phone": "Lütfen geçerli bir telefon veya WhatsApp numarası girin.",
+      "email": "Lütfen geçerli bir e-posta adresi girin.",
+      "interestType": "Lütfen ilgilendiğiniz konuyu seçin.",
+      "generic": "Bir şeyler ters gitti. Lütfen tekrar deneyin veya yedek formu kullanın."
+    }
+  },
+  "faq": {
+    "title": "Sıkça sorulan sorular",
+    "items": {
+      "where": {
+        "q": "Standınız nerede?",
+        "a": "Foodist İstanbul 2026 boyunca (1-4 Eylül 2026) Tüyap Fuar ve Kongre Merkezi, İstanbul'da Salon 1 / Stant 151B'deyiz."
+      },
+      "meeting": {
+        "q": "Önceden toplantı planlayabilir miyim?",
+        "a": "Evet. Yukarıdaki formu veya Toplantı Planla butonunu kullanın, fuar süresince bir zaman ayarlayalım."
+      },
+      "catalogue": {
+        "q": "Katalogu nasıl alırım?",
+        "a": "İstediğiniz katalogu Kataloglar bölümünden doğrudan indirin veya WhatsApp'tan talep edin, size gönderelim."
+      },
+      "markets": {
+        "q": "Hangi pazarlara hizmet veriyorsunuz?",
+        "a": "Dünya genelinde ithalatçılara, distribütörlere ve zincir perakendecilere hizmet veren, Türkiye merkezli ihracat odaklı bir üreticiyiz."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "İstanbul'dan dünya raflarına.",
+    "quickLinks": "Hızlı bağlantılar",
+    "cataloguesTitle": "Kataloglar",
+    "contactTitle": "İletişim",
+    "follow": "Bizi takip edin",
+    "rights": "Tüm hakları saklıdır.",
+    "booth": "Foodist İstanbul 2026 · Salon 1 / Stant 151B"
+  },
+  "stickyCta": {
+    "meeting": "Toplantı",
+    "whatsapp": "WhatsApp"
+  },
+  "whatsapp": {
+    "default": "Merhaba Kalite, Foodist İstanbul 2026 sayfanızı gördüm ve görüşmek istiyorum.",
+    "meeting": "Merhaba Kalite, Foodist İstanbul 2026'da (Salon 1 / Stant 151B) bir B2B toplantı planlamak istiyorum."
+  },
+  "thankYou": {
+    "title": "Teşekkürler!",
+    "body": "Talebiniz alındı. Ekibimiz kısa süre içinde sizinle iletişime geçecek.",
+    "whatsapp": "WhatsApp'tan devam et",
+    "downloadCatalogues": "Katalogları indir",
+    "backHome": "Ana sayfaya dön"
+  }
+}

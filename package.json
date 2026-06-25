@@ -1,0 +1,31 @@
+{
+  "name": "kalite-foodist-2026-microsite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Premium B2B microsite for Kalite Çikolata at Foodist Istanbul 2026",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
+    "framer-motion": "^11.3.19",
+    "next": "^14.2.33",
+    "next-intl": "^3.17.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.52.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "typescript": "^5.5.4"
+  }
+}

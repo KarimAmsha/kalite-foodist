@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Kalite Çikolata at Foodist Istanbul 2026 | Hall 1 Stand 151B",
+    "description": "Meet Kalite Çikolata at Foodist Istanbul 2026, September 1-4 at Tüyap Fair and Congress Center, Istanbul. Discover our chocolate, wafer, biscuit, cake and gummy ranges. Hall 1 / Stand 151B.",
+    "ogAlt": "Kalite Çikolata at Foodist Istanbul 2026 — Hall 1 / Stand 151B"
+  },
+  "nav": {
+    "event": "Event",
+    "products": "Products",
+    "catalogues": "Catalogues",
+    "team": "Team",
+    "contact": "Contact",
+    "bookMeeting": "Book a Meeting",
+    "skipToContent": "Skip to content"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "tr": "Türkçe",
+    "ar": "العربية"
+  },
+  "hero": {
+    "eyebrow": "Foodist Istanbul 2026 · International Food & Beverage Fair",
+    "title": "Meet Kalite Çikolata at Foodist Istanbul 2026",
+    "subtitle": "From Istanbul to global shelves — export-ready confectionery lines from Türkiye.",
+    "bookMeeting": "Book a B2B Meeting",
+    "downloadCatalogues": "Download Catalogues",
+    "whatsapp": "Chat on WhatsApp",
+    "boothLabel": "Find us at"
+  },
+  "event": {
+    "title": "Event details",
+    "subtitle": "Everything you need to find us at the fair.",
+    "dateLabel": "Date",
+    "venueLabel": "Venue",
+    "boothLabel": "Booth",
+    "getDirections": "Get directions"
+  },
+  "whyVisit": {
+    "title": "Why visit Kalite at the fair",
+    "subtitle": "Four reasons to stop by Hall 1 / Stand 151B.",
+    "points": {
+      "newProducts": {
+        "title": "New products",
+        "body": "See our latest launches and seasonal additions before they hit the market."
+      },
+      "exportReady": {
+        "title": "Export ready",
+        "body": "Documentation, packaging and logistics built for international distribution."
+      },
+      "variety": {
+        "title": "Wide variety",
+        "body": "Chocolate, wafer, biscuit, cake and gummy ranges across many SKUs and weights."
+      },
+      "team": {
+        "title": "Dedicated sales team",
+        "body": "Talk directly with our export team about your market and product fit."
+      }
+    }
+  },
+  "brands": {
+    "title": "Product families",
+    "subtitle": "A focused range built for retail shelves and wholesale channels.",
+    "nukka": { "tagline": "Our main, diverse confectionery range." },
+    "prosweet": { "tagline": "Wafer and snack lines for fast-moving channels." },
+    "jellyFunny": { "tagline": "Gummy and candy products with playful, shelf-ready packaging." },
+    "newProducts": { "tagline": "The latest additions we are launching at the fair." }
+  },
+  "catalogues": {
+    "title": "Catalogues",
+    "subtitle": "Open or download our latest PDF catalogues.",
+    "download": "Download PDF",
+    "requestWhatsapp": "Request on WhatsApp",
+    "spotlight": "New at the fair",
+    "items": {
+      "newProducts": "Our highlight catalogue of new launches for Foodist Istanbul 2026.",
+      "nukka": "The main NUKKA range across our core confectionery categories.",
+      "prosweet": "PROSWEET wafer and snack lines.",
+      "jellyFunny": "Jelly Funny gummy and candy selection."
+    },
+    "whatsappMessage": "Hello Kalite, I would like to request the {brand} catalogue."
+  },
+  "team": {
+    "title": "Meet our team",
+    "subtitle": "Talk to the people who can move your order forward.",
+    "contact": "Contact",
+    "roles": {
+      "salesSpecialist": "Sales Specialist"
+    }
+  },
+  "form": {
+    "title": "Book a meeting or request a catalogue",
+    "subtitle": "Tell us a little about your business and we will follow up quickly.",
+    "fields": {
+      "fullName": "Full name",
+      "company": "Company name",
+      "country": "Country",
+      "phone": "Phone / WhatsApp",
+      "email": "Email",
+      "interestType": "I am interested in",
+      "interestedBrand": "Brand of interest",
+      "preferredMeetingDate": "Preferred meeting date",
+      "message": "Message"
+    },
+    "placeholders": {
+      "fullName": "e.g. Jane Doe",
+      "company": "e.g. Global Foods Ltd.",
+      "country": "e.g. United Arab Emirates",
+      "phone": "+971 50 000 0000",
+      "email": "you@company.com",
+      "message": "Anything you would like us to know"
+    },
+    "optional": "optional",
+    "interest": {
+      "catalogue": "Catalogue",
+      "meeting": "Meeting",
+      "quotation": "Quotation",
+      "samples": "Samples",
+      "distribution": "Distribution"
+    },
+    "brandChoice": {
+      "kalite": "Kalite",
+      "nukka": "NUKKA",
+      "prosweet": "PROSWEET",
+      "jellyFunny": "Jelly Funny",
+      "newProducts": "New Products",
+      "none": "Not sure yet"
+    },
+    "consent": "We will contact you regarding your request. We do not share your details with third parties.",
+    "submit": "Send request",
+    "submitting": "Sending…",
+    "fallback": "Having trouble? Use our backup form instead.",
+    "errors": {
+      "fullName": "Please enter your name.",
+      "company": "Please enter your company name.",
+      "country": "Please enter your country.",
+      "phone": "Please enter a valid phone or WhatsApp number.",
+      "email": "Please enter a valid email address.",
+      "interestType": "Please choose what you are interested in.",
+      "generic": "Something went wrong. Please try again or use the backup form."
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": {
+      "where": {
+        "q": "Where is your booth?",
+        "a": "We are at Hall 1 / Stand 151B, Tüyap Fair and Congress Center, Istanbul, during Foodist Istanbul 2026 (September 1-4, 2026)."
+      },
+      "meeting": {
+        "q": "Can I book a meeting in advance?",
+        "a": "Yes. Use the form above or the Book a Meeting button and we will confirm a time during the fair."
+      },
+      "catalogue": {
+        "q": "How do I get a catalogue?",
+        "a": "Download any catalogue directly from the Catalogues section, or request one via WhatsApp and we will send it to you."
+      },
+      "markets": {
+        "q": "Which markets do you serve?",
+        "a": "We are an export-focused producer from Türkiye serving importers, distributors and chain retailers worldwide."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "From Istanbul to global shelves.",
+    "quickLinks": "Quick links",
+    "cataloguesTitle": "Catalogues",
+    "contactTitle": "Contact",
+    "follow": "Follow us",
+    "rights": "All rights reserved.",
+    "booth": "Foodist Istanbul 2026 · Hall 1 / Stand 151B"
+  },
+  "stickyCta": {
+    "meeting": "Meeting",
+    "whatsapp": "WhatsApp"
+  },
+  "whatsapp": {
+    "default": "Hello Kalite, I saw your Foodist Istanbul 2026 page and would like to connect.",
+    "meeting": "Hello Kalite, I would like to book a B2B meeting at Foodist Istanbul 2026 (Hall 1 / Stand 151B)."
+  },
+  "thankYou": {
+    "title": "Thank you!",
+    "body": "Your request has been received. Our team will contact you soon.",
+    "whatsapp": "Continue on WhatsApp",
+    "downloadCatalogues": "Download catalogues",
+    "backHome": "Back to home"
+  }
+}
