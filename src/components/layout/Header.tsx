@@ -48,7 +48,7 @@ export function Header() {
             src={logos.kalite}
             alt="Kalite Çikolata"
             eager
-            imgClassName="h-9 w-auto sm:h-10"
+            imgClassName="h-11 w-auto sm:h-12"
             fallback={
               <span className="flex items-center gap-2.5">
                 <span className="grid h-9 w-9 place-items-center rounded-lg bg-kalite-red font-heading text-lg font-bold text-white shadow-soft">

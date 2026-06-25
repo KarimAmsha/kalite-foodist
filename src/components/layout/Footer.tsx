@@ -30,7 +30,7 @@ export function Footer() {
               <BrandLogo
                 src={logos.kalite}
                 alt="Kalite Çikolata"
-                imgClassName="h-10 w-auto"
+                imgClassName="h-14 w-auto"
                 fallback={<span className="font-heading text-lg font-bold text-kalite-red">Kalite Çikolata</span>}
               />
             </span>
@@ -47,7 +47,7 @@ export function Footer() {
                 <BrandLogo
                   src={logos.foodist}
                   alt="Foodist Istanbul 2026"
-                  imgClassName="h-7 w-auto"
+                  imgClassName="h-9 w-auto"
                   fallback={<span className="font-heading text-sm font-bold text-kalite-red">Foodist Istanbul</span>}
                 />
               </span>

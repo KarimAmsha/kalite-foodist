@@ -25,13 +25,13 @@ export function BrandsStrip() {
               href={b.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between gap-4 rounded-2xl border border-kalite-brown/10 bg-white px-6 py-5 shadow-card transition hover:-translate-y-0.5 hover:shadow-glow"
+              className="group flex items-center justify-between gap-4 rounded-2xl border border-kalite-brown/10 bg-white px-6 py-6 shadow-card transition hover:-translate-y-0.5 hover:shadow-glow"
             >
               <BrandLogo
                 src={b.logo}
                 alt={b.name}
-                imgClassName="h-9 w-auto max-w-[150px] object-contain"
-                fallback={<span className={`font-heading text-lg font-bold ${b.accent}`}>{b.name}</span>}
+                imgClassName="h-16 w-auto max-w-[210px] object-contain"
+                fallback={<span className={`font-heading text-2xl font-bold ${b.accent}`}>{b.name}</span>}
               />
               <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-kalite-brown/50 transition group-hover:text-kalite-red">
                 {t('visit')}
