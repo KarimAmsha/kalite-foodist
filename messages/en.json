@@ -130,6 +130,8 @@
     "submit": "Send request",
     "submitting": "Sending…",
     "fallback": "Having trouble? Use our backup form instead.",
+    "sendViaWhatsapp": "Send your details via WhatsApp",
+    "fallbackLead": "New lead from the Foodist Istanbul 2026 site:",
     "errors": {
       "fullName": "Please enter your name.",
       "company": "Please enter your company name.",

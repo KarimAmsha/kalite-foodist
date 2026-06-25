@@ -10,7 +10,8 @@ import { Button } from '@/components/ui/Button';
 import { leadSchema, type LeadInput, interestTypes, brandChoices } from '@/lib/validators';
 import { submitLead } from '@/lib/submitLead';
 import { detectSource } from '@/lib/analytics';
-import { env } from '@/content/site';
+import { env, whatsappLink } from '@/content/site';
+import { WhatsAppIcon } from '@/components/ui/icons';
 
 export function LeadFormSection() {
   const t = useTranslations('form');
@@ -22,11 +23,31 @@ export function LeadFormSection() {
     register,
     handleSubmit,
     setValue,
+    getValues,
     formState: { errors, isSubmitting },
   } = useForm<LeadInput>({
     resolver: zodResolver(leadSchema),
     defaultValues: { interested_brand: 'none', locale, source: 'direct' },
   });
+
+  // Build a WhatsApp message that carries everything the visitor typed, so a
+  // failed webhook never loses a lead — they can send it to us in one tap.
+  function buildFallbackWhatsapp(): string {
+    const v = getValues();
+    const lines = [
+      t('fallbackLead'),
+      `${t('fields.fullName')}: ${v.full_name || '-'}`,
+      `${t('fields.company')}: ${v.company || '-'}`,
+      `${t('fields.country')}: ${v.country || '-'}`,
+      `${t('fields.phone')}: ${v.phone || '-'}`,
+      `${t('fields.email')}: ${v.email || '-'}`,
+      `${t('fields.interestType')}: ${v.interest_type ? t(`interest.${v.interest_type}`) : '-'}`,
+      `${t('fields.interestedBrand')}: ${v.interested_brand ? t(`brandChoice.${v.interested_brand}`) : '-'}`,
+      `${t('fields.preferredMeetingDate')}: ${v.preferred_meeting_date || '-'}`,
+      `${t('fields.message')}: ${v.message || '-'}`,
+    ];
+    return whatsappLink(lines.join('\n'));
+  }
 
   // Fill auto fields on the client (source needs window).
   useEffect(() => {
@@ -160,9 +181,18 @@ export function LeadFormSection() {
             <p className="mt-5 text-xs leading-relaxed text-kalite-brown/60">{t('consent')}</p>
 
             {serverError && (
-              <p role="alert" className="mt-3 rounded-lg bg-kalite-red/10 px-4 py-3 text-sm font-medium text-kalite-red">
-                {t(`errors.${serverError}`)}
-              </p>
+              <div role="alert" className="mt-3 rounded-xl bg-kalite-red/10 p-4">
+                <p className="text-sm font-medium text-kalite-red">{t(`errors.${serverError}`)}</p>
+                <a
+                  href={buildFallbackWhatsapp()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-sm font-semibold text-white"
+                >
+                  <WhatsAppIcon className="h-4 w-4" />
+                  {t('sendViaWhatsapp')}
+                </a>
+              </div>
             )}
 
             <div className="mt-6 flex flex-col items-center gap-3">

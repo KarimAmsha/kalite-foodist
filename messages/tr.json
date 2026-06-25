@@ -130,6 +130,8 @@
     "submit": "Talebi gönder",
     "submitting": "Gönderiliyor…",
     "fallback": "Sorun mu yaşıyorsunuz? Yedek formumuzu kullanın.",
+    "sendViaWhatsapp": "Bilgilerinizi WhatsApp ile gönderin",
+    "fallbackLead": "Foodist İstanbul 2026 sitesinden yeni talep:",
     "errors": {
       "fullName": "Lütfen adınızı girin.",
       "company": "Lütfen firma adınızı girin.",
