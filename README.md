@@ -71,17 +71,26 @@ never shipped to the browser.
 Leads are submitted from the in-site form → `POST /api/lead` → forwarded
 server-side to a Google Apps Script Web App → appended as a row in your Sheet.
 
-**Setup:**
+**The Sheet already exists** (created in `karim.amsha@gmail.com`'s Drive, with the
+header row populated):
 
-1. Create a Google Sheet (e.g. "Kalite Foodist 2026 Leads").
-2. `Extensions → Apps Script`, paste [`google-apps-script/Code.gs`](google-apps-script/Code.gs), save.
-3. Run `setup()` once to create the header row (grant permissions).
-4. `Deploy → New deployment → Web app`:
+- **Name:** Kalite Foodist 2026 — Leads
+- **URL:** https://docs.google.com/spreadsheets/d/1VLWmi0DXSP5tfgSnSaBBnqD9q3ijjsuNTEmmJbzWnjo/edit
+
+**Remaining setup (manual — requires your Google authorization):**
+
+1. Open the Sheet (link above) → `Extensions → Apps Script`.
+2. Paste [`google-apps-script/Code.gs`](google-apps-script/Code.gs), save.
+3. `Deploy → New deployment → Web app`:
    - **Execute as:** Me
    - **Who has access:** Anyone
-5. Copy the Web App URL into `GOOGLE_SCRIPT_WEBHOOK_URL` (local `.env.local`
-   **and** Vercel project env vars).
+4. Authorize when prompted, then copy the **Web App URL**.
+5. Put that URL into `GOOGLE_SCRIPT_WEBHOOK_URL` — locally in `.env.local` **and**
+   in Vercel `Project → Settings → Environment Variables`.
 6. Restrict edit access on the Sheet to the sales team only.
+
+`Code.gs` writes to the first tab and adds the header row only if it's missing,
+so it works whether the tab is named `Leads` or the default name.
 
 **Sheet columns:**
 

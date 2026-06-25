@@ -36,10 +36,9 @@ var COLUMNS = [
 
 function getSheet_() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName(SHEET_NAME);
-  if (!sheet) {
-    sheet = ss.insertSheet(SHEET_NAME);
-  }
+  // Prefer a tab literally named "Leads"; otherwise use the first tab that
+  // already exists (the sheet may have been created with a different tab name).
+  var sheet = ss.getSheetByName(SHEET_NAME) || ss.getSheets()[0];
   if (sheet.getLastRow() === 0) {
     sheet.appendRow(COLUMNS);
     sheet.setFrozenRows(1);
