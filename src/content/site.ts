@@ -58,7 +58,7 @@ export const logos = {
 
 export const socials = {
   instagram: 'https://instagram.com/kalitecikolata',
-  linkedin: 'https://www.linkedin.com/company/kalite-cikolata',
+  linkedin: 'https://www.linkedin.com/company/kalitecikolata',
   website: 'https://kalitecikolata.com.tr',
 } as const;
 
