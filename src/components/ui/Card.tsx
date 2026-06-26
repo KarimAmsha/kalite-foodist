@@ -3,18 +3,16 @@ import type { ReactNode } from 'react';
 interface CardProps {
   children: ReactNode;
   className?: string;
-  /** glass/cream surface used for catalogue + brand cards */
-  glass?: boolean;
+  /** Adds the hover lift + gold glow interaction. */
+  interactive?: boolean;
 }
 
-export function Card({ children, className = '', glass = false }: CardProps) {
-  const surface = glass
-    ? 'bg-white/70 backdrop-blur-md ring-1 ring-white/60'
-    : 'bg-white ring-1 ring-kalite-brown/10';
-
+export function Card({ children, className = '', interactive = true }: CardProps) {
   return (
     <div
-      className={`rounded-2xl ${surface} shadow-card transition-all duration-300 hover:shadow-glow hover:-translate-y-1 ${className}`}
+      className={`glass ${
+        interactive ? 'transition-all duration-300 hover:-translate-y-1 hover:border-kalite-gold/40 hover:shadow-glow' : ''
+      } ${className}`}
     >
       {children}
     </div>

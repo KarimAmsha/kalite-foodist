@@ -18,56 +18,41 @@ export function TeamSection() {
   const tw = useTranslations('whatsapp');
 
   return (
-    <section id="team" className="section-pad bg-white/50">
+    <section id="team" className="section-pad">
       <div className="container-px">
         <SectionTitle eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2">
           {team.map((m, i) => {
-            const initials = m.name
-              .split(' ')
-              .map((w) => w[0])
-              .slice(0, 2)
-              .join('');
+            const initials = m.name.split(' ').map((w) => w[0]).slice(0, 2).join('');
             return (
               <Reveal key={m.name} delay={i * 0.08}>
-                <div className="card-surface h-full overflow-hidden">
-                  <div className="flex items-center gap-4 border-b border-kalite-brown/10 bg-cream-radial p-6">
-                    <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-red-sheen font-heading text-xl font-bold text-white shadow-soft">
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-md">
+                  <div className="flex items-center gap-4 border-b border-white/10 bg-night-radial p-6">
+                    <span className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl bg-gold-sheen font-heading text-xl font-bold text-kalite-ink shadow-soft">
                       {initials}
                     </span>
                     <div className="min-w-0">
-                      <p className="font-heading text-lg font-bold text-kalite-ink">{m.name}</p>
-                      <p className="text-sm font-medium text-kalite-red">{t(`roles.${m.roleKey}`)}</p>
-                      <p className="mt-0.5 text-xs text-kalite-brown/55">{m.markets}</p>
+                      <p className="font-heading text-lg font-bold text-kalite-cream">{m.name}</p>
+                      <p className="text-sm font-medium text-kalite-gold-soft">{t(`roles.${m.roleKey}`)}</p>
+                      <p className="mt-0.5 text-xs text-kalite-cream/50">{m.markets}</p>
                     </div>
                   </div>
 
                   <div className="flex flex-col gap-2 p-5">
                     {m.whatsapp && (
-                      <a
-                        href={whatsappLink(tw('meeting'))}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-3 rounded-xl bg-[#25D366]/10 px-4 py-2.5 text-sm font-semibold text-[#1c8a45] transition hover:bg-[#25D366]/20"
-                      >
+                      <a href={whatsappLink(tw('meeting'))} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl bg-[#25D366]/15 px-4 py-2.5 text-sm font-semibold text-[#3ee07e] transition hover:bg-[#25D366]/25">
                         <WhatsAppIcon className="h-4 w-4" /> {t('contact')}
                       </a>
                     )}
                     {m.phone && (
-                      <a
-                        href={`tel:${m.phoneHref}`}
-                        className="flex items-center gap-3 rounded-xl bg-kalite-cream px-4 py-2.5 text-sm font-medium text-kalite-ink transition hover:bg-kalite-cream-deep"
-                      >
-                        <PhoneIcon className="h-4 w-4 text-kalite-red" /> {m.phone}
+                      <a href={`tel:${m.phoneHref}`} className="flex items-center gap-3 rounded-xl bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-kalite-cream transition hover:bg-white/[0.09]">
+                        <PhoneIcon className="h-4 w-4 text-kalite-gold-soft" /> {m.phone}
                       </a>
                     )}
                     {m.email && (
-                      <a
-                        href={`mailto:${m.email}`}
-                        className="flex items-center gap-3 rounded-xl bg-kalite-cream px-4 py-2.5 text-sm font-medium text-kalite-ink transition hover:bg-kalite-cream-deep"
-                      >
-                        <MailIcon className="h-4 w-4 text-kalite-red" /> {m.email}
+                      <a href={`mailto:${m.email}`} className="flex items-center gap-3 rounded-xl bg-white/[0.05] px-4 py-2.5 text-sm font-medium text-kalite-cream transition hover:bg-white/[0.09]">
+                        <MailIcon className="h-4 w-4 text-kalite-gold-soft" /> {m.email}
                       </a>
                     )}
                   </div>

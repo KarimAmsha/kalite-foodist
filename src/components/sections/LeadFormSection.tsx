@@ -76,7 +76,7 @@ export function LeadFormSection() {
           <form
             onSubmit={handleSubmit(onSubmit)}
             noValidate
-            className="mt-10 rounded-3xl border border-kalite-brown/10 bg-white p-6 shadow-card sm:p-8"
+            className="mt-10 rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-card backdrop-blur-md sm:p-8"
           >
             {/* Honeypot: hidden from users, bots fill it. */}
             <div className="absolute -left-[9999px]" aria-hidden>
@@ -178,11 +178,11 @@ export function LeadFormSection() {
               </div>
             </div>
 
-            <p className="mt-5 text-xs leading-relaxed text-kalite-brown/60">{t('consent')}</p>
+            <p className="mt-5 text-xs leading-relaxed text-kalite-cream/55">{t('consent')}</p>
 
             {serverError && (
-              <div role="alert" className="mt-3 rounded-xl bg-kalite-red/10 p-4">
-                <p className="text-sm font-medium text-kalite-red">{t(`errors.${serverError}`)}</p>
+              <div role="alert" className="mt-3 rounded-xl border border-kalite-red-bright/30 bg-kalite-red/15 p-4">
+                <p className="text-sm font-medium text-kalite-red-bright">{t(`errors.${serverError}`)}</p>
                 <a
                   href={buildFallbackWhatsapp()}
                   target="_blank"
@@ -204,7 +204,7 @@ export function LeadFormSection() {
                   href={env.googleFormFallbackUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-kalite-brown/60 underline-offset-4 hover:underline"
+                  className="text-xs text-kalite-cream/55 underline-offset-4 hover:underline"
                 >
                   {t('fallback')}
                 </a>
@@ -218,8 +218,8 @@ export function LeadFormSection() {
 }
 
 function inputCls(hasError: boolean) {
-  return `w-full rounded-xl border bg-kalite-cream/40 px-4 py-3 text-sm text-kalite-brown outline-none transition placeholder:text-kalite-brown/40 focus:border-kalite-gold focus:bg-white focus:ring-2 focus:ring-kalite-gold/30 ${
-    hasError ? 'border-kalite-red' : 'border-kalite-brown/15'
+  return `w-full rounded-xl border bg-black/20 px-4 py-3 text-sm text-kalite-cream outline-none transition placeholder:text-kalite-cream/35 focus:border-kalite-gold focus:bg-black/30 focus:ring-2 focus:ring-kalite-gold/30 [color-scheme:dark] ${
+    hasError ? 'border-kalite-red-bright' : 'border-white/15'
   }`;
 }
 
@@ -238,13 +238,13 @@ function Field({
 }) {
   return (
     <label className="block">
-      <span className="mb-1.5 flex items-center gap-1.5 text-sm font-medium text-kalite-brown">
+      <span className="mb-1.5 flex items-center gap-1.5 text-sm font-medium text-kalite-cream/85">
         {label}
-        {required && <span className="text-kalite-red">*</span>}
-        {optional && <span className="text-xs font-normal text-kalite-brown/45">({optional})</span>}
+        {required && <span className="text-kalite-red-bright">*</span>}
+        {optional && <span className="text-xs font-normal text-kalite-cream/40">({optional})</span>}
       </span>
       {children}
-      {error && <span className="mt-1 block text-xs text-kalite-red">{error}</span>}
+      {error && <span className="mt-1 block text-xs text-kalite-red-bright">{error}</span>}
     </label>
   );
 }

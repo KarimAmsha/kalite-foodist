@@ -18,50 +18,29 @@ export function ContactSection() {
   const tw = useTranslations('whatsapp');
 
   const rows = [
-    {
-      icon: <MapPinIcon className="h-5 w-5" />,
-      label: t('addressLabel'),
-      value: company.address,
-    },
-    {
-      icon: <PhoneIcon className="h-5 w-5" />,
-      label: t('phoneLabel'),
-      value: company.phone,
-      href: `tel:${company.phoneHref}`,
-    },
-    {
-      icon: <MailIcon className="h-5 w-5" />,
-      label: t('emailLabel'),
-      value: company.email,
-      href: `mailto:${company.email}`,
-    },
+    { icon: <MapPinIcon className="h-5 w-5" />, label: t('addressLabel'), value: company.address },
+    { icon: <PhoneIcon className="h-5 w-5" />, label: t('phoneLabel'), value: company.phone, href: `tel:${company.phoneHref}` },
+    { icon: <MailIcon className="h-5 w-5" />, label: t('emailLabel'), value: company.email, href: `mailto:${company.email}` },
   ];
 
   return (
     <section id="visit" className="section-pad">
       <div className="container-px">
         <div className="grid items-stretch gap-8 lg:grid-cols-2">
-          {/* Info */}
           <Reveal>
-            <div className="card-surface h-full p-8">
+            <div className="h-full rounded-2xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-md">
               <SectionTitle eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} align="start" />
 
               <ul className="mt-8 space-y-5">
                 {rows.map((r) => (
                   <li key={r.label} className="flex items-start gap-4">
-                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-kalite-cream text-kalite-red">
-                      {r.icon}
-                    </span>
+                    <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/[0.06] text-kalite-gold-soft">{r.icon}</span>
                     <span className="min-w-0">
-                      <span className="block text-xs font-semibold uppercase tracking-wide text-kalite-brown/50">
-                        {r.label}
-                      </span>
+                      <span className="block text-xs font-semibold uppercase tracking-wide text-kalite-cream/50">{r.label}</span>
                       {r.href ? (
-                        <a href={r.href} className="block text-sm font-medium text-kalite-ink hover:text-kalite-red">
-                          {r.value}
-                        </a>
+                        <a href={r.href} className="block text-sm font-medium text-kalite-cream hover:text-kalite-gold-soft">{r.value}</a>
                       ) : (
-                        <span className="block text-sm font-medium leading-relaxed text-kalite-ink">{r.value}</span>
+                        <span className="block text-sm font-medium leading-relaxed text-kalite-cream">{r.value}</span>
                       )}
                     </span>
                   </li>
@@ -81,16 +60,15 @@ export function ContactSection() {
             </div>
           </Reveal>
 
-          {/* Booth highlight panel */}
           <Reveal delay={0.1}>
-            <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-2xl bg-brown-sheen p-8 text-kalite-cream shadow-glow">
+            <div className="relative grain flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-kalite-gold/25 bg-night-radial p-8 text-kalite-cream shadow-glow">
               <div aria-hidden className="pointer-events-none absolute -end-10 -top-10 h-48 w-48 rounded-full bg-kalite-red/20 blur-3xl" />
               <div className="relative">
                 <span className="inline-flex items-center gap-2 rounded-full border border-kalite-gold/40 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-kalite-gold-soft">
                   <BoothIcon className="h-3.5 w-3.5" /> {t('boothEyebrow')}
                 </span>
-                <p className="mt-6 font-heading text-3xl font-bold leading-tight text-white">{t('boothTitle')}</p>
-                <p className="mt-3 text-sm text-kalite-cream/70">{eventData.fullName}</p>
+                <p className="mt-6 font-heading text-3xl font-bold leading-tight text-kalite-cream">{t('boothTitle')}</p>
+                <p className="mt-3 text-sm text-kalite-cream/65">{eventData.fullName}</p>
               </div>
 
               <div className="relative mt-8 grid grid-cols-2 gap-4">
@@ -109,9 +87,9 @@ export function ContactSection() {
 
 function Stat({ label, value, highlight = false }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className="rounded-xl border border-kalite-gold/15 bg-white/5 px-4 py-3">
+    <div className="rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3">
       <p className="text-[0.65rem] uppercase tracking-wide text-kalite-cream/45">{label}</p>
-      <p className={`font-heading text-2xl font-bold ${highlight ? 'text-kalite-gold-soft' : 'text-white'}`}>{value}</p>
+      <p className={`font-heading text-2xl font-bold ${highlight ? 'text-gold-gradient' : 'text-kalite-cream'}`}>{value}</p>
     </div>
   );
 }

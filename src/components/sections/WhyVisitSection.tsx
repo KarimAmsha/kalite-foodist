@@ -14,7 +14,7 @@ export function WhyVisitSection() {
   const t = useTranslations('whyVisit');
 
   return (
-    <section className="section-pad bg-white/50">
+    <section className="section-pad">
       <div className="container-px">
         <SectionTitle eyebrow={t('eyebrow')} title={t('title')} subtitle={t('subtitle')} />
 
@@ -23,16 +23,12 @@ export function WhyVisitSection() {
             const Icon = p.icon;
             return (
               <Reveal key={p.key} delay={i * 0.08}>
-                <div className="group h-full rounded-2xl border border-kalite-brown/10 bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-glow">
-                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-kalite-cream text-kalite-red transition group-hover:bg-kalite-red group-hover:text-white">
+                <div className="group h-full rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-md transition hover:-translate-y-1 hover:border-kalite-gold/40 hover:shadow-glow">
+                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-white/[0.06] text-kalite-gold-soft transition group-hover:bg-gold-sheen group-hover:text-kalite-ink">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h3 className="mt-4 font-heading text-lg font-bold text-kalite-brown">
-                    {t(`points.${p.key}.title`)}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-kalite-brown/70">
-                    {t(`points.${p.key}.body`)}
-                  </p>
+                  <h3 className="mt-4 font-heading text-lg font-bold text-kalite-cream">{t(`points.${p.key}.title`)}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-kalite-cream/65">{t(`points.${p.key}.body`)}</p>
                 </div>
               </Reveal>
             );

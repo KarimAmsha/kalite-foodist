@@ -2,14 +2,17 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { Link, usePathname } from '@/i18n/routing';
 import { Button } from '@/components/ui/Button';
 import { LanguageSwitcher } from '@/components/ui/LanguageSwitcher';
 import { BrandLogo } from '@/components/ui/BrandLogo';
+import { MobileMenu } from '@/components/layout/MobileMenu';
+import { navItems } from '@/content/nav';
 import { logos } from '@/content/site';
 
 export function Header() {
   const t = useTranslations('nav');
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -19,20 +22,13 @@ export function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const links = [
-    { href: '#event', label: t('event') },
-    { href: '#products', label: t('products') },
-    { href: '#catalogues', label: t('catalogues') },
-    { href: '#team', label: t('team') },
-    { href: '#visit', label: t('visit') },
-  ];
+  const isActive = (href: string) =>
+    href === '/' ? pathname === '/' : pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
-        scrolled
-          ? 'border-b border-kalite-brown/10 bg-kalite-cream/85 backdrop-blur-md'
-          : 'bg-transparent'
+        scrolled ? 'border-b border-white/10 bg-kalite-night/80 backdrop-blur-xl' : 'bg-transparent'
       }`}
     >
       <a
@@ -42,43 +38,50 @@ export function Header() {
         {t('skipToContent')}
       </a>
 
-      <nav className="container-px flex h-16 items-center justify-between gap-4">
+      <nav className="container-px flex h-16 items-center justify-between gap-4 lg:h-18">
         <Link href="/" className="flex items-center gap-2.5" aria-label="Kalite Çikolata">
           <BrandLogo
             src={logos.kalite}
             alt="Kalite Çikolata"
             eager
-            imgClassName="h-11 w-auto sm:h-12"
+            imgClassName="h-10 w-auto sm:h-11 drop-shadow"
             fallback={
               <span className="flex items-center gap-2.5">
-                <span className="grid h-9 w-9 place-items-center rounded-lg bg-kalite-red font-heading text-lg font-bold text-white shadow-soft">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-red-sheen font-heading text-lg font-bold text-white">
                   K
                 </span>
-                <span className="hidden font-heading text-lg font-bold tracking-tight text-kalite-brown sm:block">
-                  Kalite <span className="text-kalite-red">Çikolata</span>
+                <span className="hidden font-heading text-lg font-bold text-kalite-cream sm:block">
+                  Kalite <span className="text-kalite-gold-soft">Çikolata</span>
                 </span>
               </span>
             }
           />
         </Link>
 
-        <div className="hidden items-center gap-7 md:flex">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-sm font-medium text-kalite-brown/80 transition hover:text-kalite-red"
-            >
-              {l.label}
-            </a>
-          ))}
+        <div className="hidden items-center gap-1 lg:flex">
+          {navItems.map((item) => {
+            const active = isActive(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`relative rounded-full px-3.5 py-2 text-sm font-medium transition ${
+                  active ? 'text-kalite-gold-soft' : 'text-kalite-cream/75 hover:text-kalite-cream'
+                }`}
+              >
+                {t(item.key)}
+                {active && <span className="absolute inset-x-3.5 -bottom-0.5 h-px bg-gold-sheen" />}
+              </Link>
+            );
+          })}
         </div>
 
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher />
-          <Button href="#contact" size="sm" className="hidden sm:inline-flex">
+          <Button href="/contact" size="sm" variant="gold" className="hidden sm:inline-flex">
             {t('bookMeeting')}
           </Button>
+          <MobileMenu />
         </div>
       </nav>
     </header>

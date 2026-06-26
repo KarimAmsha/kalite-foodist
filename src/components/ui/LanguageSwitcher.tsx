@@ -39,7 +39,7 @@ export function LanguageSwitcher() {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={t('label')}
-        className="inline-flex items-center gap-1.5 rounded-full border border-kalite-brown/15 bg-white/80 px-3 py-1.5 text-sm font-semibold text-kalite-brown transition hover:border-kalite-gold/60"
+        className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5 text-sm font-semibold text-kalite-cream backdrop-blur-md transition hover:border-kalite-gold/60"
       >
         <GlobeIcon />
         {labels[locale]}
@@ -49,7 +49,7 @@ export function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute end-0 z-50 mt-2 w-36 overflow-hidden rounded-xl border border-kalite-brown/10 bg-white shadow-soft"
+          className="absolute end-0 z-50 mt-2 w-36 overflow-hidden rounded-xl border border-white/10 bg-kalite-night-2 shadow-soft"
         >
           {locales.map((l) => (
             <li key={l}>
@@ -58,8 +58,8 @@ export function LanguageSwitcher() {
                 role="option"
                 aria-selected={l === locale}
                 onClick={() => switchTo(l)}
-                className={`flex w-full items-center justify-between px-4 py-2.5 text-start text-sm transition hover:bg-kalite-cream ${
-                  l === locale ? 'font-semibold text-kalite-red' : 'text-kalite-brown'
+                className={`flex w-full items-center justify-between px-4 py-2.5 text-start text-sm transition hover:bg-white/[0.06] ${
+                  l === locale ? 'font-semibold text-kalite-gold-soft' : 'text-kalite-cream/80'
                 }`}
               >
                 {t(l)}

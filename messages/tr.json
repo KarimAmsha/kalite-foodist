@@ -5,9 +5,12 @@
     "ogAlt": "Foodist İstanbul 2026'da Kalite Çikolata — Salon 1 / Stant 151B"
   },
   "nav": {
+    "home": "Ana Sayfa",
+    "brands": "Markalar",
     "event": "Fuar",
     "products": "Ürünler",
     "catalogues": "Kataloglar",
+    "about": "Hakkımızda",
     "team": "Ekip",
     "visit": "Bizi Ziyaret Edin",
     "contact": "İletişim",
@@ -23,6 +26,8 @@
   "hero": {
     "eyebrow": "Foodist İstanbul 2026 · Uluslararası Gıda ve İçecek Fuarı",
     "title": "Kalite Çikolata ile Foodist İstanbul 2026'da buluşun",
+    "titleLead": "Kalite Çikolata ile buluşun:",
+    "titleHighlight": "Foodist İstanbul 2026",
     "subtitle": "İstanbul'dan dünya raflarına — Türkiye'den ihracata hazır şekerleme serileri.",
     "bookMeeting": "B2B Toplantı Planla",
     "downloadCatalogues": "Katalogları İndir",
@@ -36,7 +41,8 @@
   },
   "brandsStrip": {
     "label": "Üç markalı bir çatı",
-    "visit": "Siteye git"
+    "visit": "Siteye git",
+    "explore": "Keşfet"
   },
   "event": {
     "eyebrow": "Fuar",
@@ -75,6 +81,7 @@
     "title": "Ürün aileleri",
     "subtitle": "Perakende rafları ve toptan kanallar için odaklı bir seri.",
     "visitBrand": "Marka sitesi",
+    "viewCatalogue": "Kataloğu gör",
     "nukka": { "tagline": "Ana ve çeşitli şekerleme serimiz." },
     "prosweet": { "tagline": "Hızlı tüketim kanalları için gofret ve atıştırmalık serileri." },
     "jellyFunny": { "tagline": "Eğlenceli, rafa hazır ambalajlı yumuşak şeker ve jöle ürünleri." },
@@ -194,6 +201,68 @@
     "boothTitle": "Salon 1 / Stant 151B'de sizi ağırlamaya hazır olacağız.",
     "dateShort": "Gün",
     "yearShort": "Yıl"
+  },
+  "cta": {
+    "title": "Foodist İstanbul 2026'da buluşalım",
+    "subtitle": "İhracat ekibimizle B2B toplantı planlayın veya WhatsApp'tan ulaşın.",
+    "bookMeeting": "Toplantı planla",
+    "whatsapp": "WhatsApp'tan yazın"
+  },
+  "pages": {
+    "brands": {
+      "eyebrow": "Markalarımız",
+      "title": "Premium markalar çatısı",
+      "subtitle": "Üç marka, Türkiye'den ihracata hazır tek bir iş ortağı."
+    },
+    "brand": {
+      "eyebrow": "Marka",
+      "officialSite": "Resmi web sitesi",
+      "contactCta": "Ekibimizle konuşun"
+    },
+    "catalogues": {
+      "eyebrow": "İndirilenler",
+      "title": "Kataloglarımız",
+      "subtitle": "En güncel kataloglarımızı açın, indirin veya WhatsApp'tan talep edin."
+    },
+    "team": {
+      "eyebrow": "Ekip",
+      "title": "İhracat ekibimizle konuşun",
+      "subtitle": "Siparişinizi ilerletecek kişiler — fuardan önce, sırasında ve sonrasında."
+    },
+    "contact": {
+      "eyebrow": "İletişime geçin",
+      "title": "Toplantı planlayın veya katalog talep edin",
+      "subtitle": "İşletmenizden bahsedin, en kısa sürede dönüş yapalım."
+    },
+    "about": {
+      "eyebrow": "Hakkımızda",
+      "title": "Dünya için üretilen şekerleme",
+      "subtitle": "İstanbul'dan ihracat odaklı bir üretici; çikolata, gofret, bisküvi, kek ve yumuşak şeker serilerini dünya raflarına taşıyor.",
+      "storyTitle": "İstanbul'dan dünya raflarına",
+      "storyBody1": "Kalite Çikolata, uluslararası dağıtım için tasarlanmış geniş bir şekerleme yelpazesi üretir — birçok SKU ve gramajda çikolata, gofret, bisküvi, kek ve yumuşak şeker serileri.",
+      "storyBody2": "NUKKA ve PROSWEET markalarımızla; rafa hazır ambalaj, tutarlı kalite ve güvenilir ihracat lojistiğiyle ithalatçılara, distribütörlere ve zincir perakendecilere hizmet veriyoruz.",
+      "stats": { "brands": "Marka", "languages": "Dil", "skus": "SKU", "markets": "Pazar" }
+    }
+  },
+  "brandPages": {
+    "kalite": {
+      "tagline": "Ana markamız — premium şekerlemenin tam yelpazesi.",
+      "headline": "Kalite Çikolata serisi",
+      "body": "Kalite Çikolata, markalar çatımızın kalbidir: dünya genelinde perakende rafları ve toptan kanallar için Türkiye'de üretilen geniş, ihracata hazır bir şekerleme portföyü.",
+      "points": { "p1": "Çikolata, gofret, bisküvi, kek ve yumuşak şeker kategorileri", "p2": "Perakende için rafa hazır ambalaj", "p3": "Güvenilir ihracat dokümantasyonu ve lojistiği" }
+    },
+    "nukka": {
+      "tagline": "Ana ve çeşitli şekerleme serimiz.",
+      "headline": "NUKKA — hareket eden çeşitlilik",
+      "body": "NUKKA, temel şekerleme kategorilerindeki amiral serimizdir; güçlü görsel ambalajıyla hızlı tüketim raflarında performans için tasarlanmıştır.",
+      "points": { "p1": "Kategoriler arası geniş seçim", "p2": "Birden çok gramaj ve format", "p3": "Dikkat çekici, rafa hazır tasarım" }
+    },
+    "prosweet": {
+      "tagline": "Hızlı tüketim kanalları için gofret ve atıştırmalık serileri.",
+      "headline": "PROSWEET — gofret & atıştırmalık",
+      "body": "PROSWEET; tutarlı kalite ve rekabetçi formatlarla, hızlı dönen toptan ve perakende kanalları için gofret ve atıştırmalık serilerine odaklanır.",
+      "points": { "p1": "Gofret ve atıştırmalık uzmanı", "p2": "Yüksek rotasyonlu kanallar için", "p3": "İhracata hazır ambalaj ve lojistik" }
+    }
   },
   "footer": {
     "tagline": "İstanbul'dan dünya raflarına.",

@@ -6,21 +6,10 @@ interface SectionTitleProps {
   subtitle?: ReactNode;
   align?: 'start' | 'center';
   className?: string;
-  tone?: 'dark' | 'light';
 }
 
-export function SectionTitle({
-  eyebrow,
-  title,
-  subtitle,
-  align = 'center',
-  className = '',
-  tone = 'dark',
-}: SectionTitleProps) {
+export function SectionTitle({ eyebrow, title, subtitle, align = 'center', className = '' }: SectionTitleProps) {
   const alignment = align === 'center' ? 'text-center mx-auto items-center' : 'text-start items-start';
-  const titleColor = tone === 'light' ? 'text-white' : 'text-kalite-ink';
-  const subColor = tone === 'light' ? 'text-white/70' : 'text-kalite-brown/70';
-
   return (
     <div className={`flex max-w-2xl flex-col ${alignment} ${className}`}>
       {eyebrow ? (
@@ -29,12 +18,10 @@ export function SectionTitle({
           {eyebrow}
         </span>
       ) : (
-        <span className="mb-4 block h-1 w-12 rounded-full bg-kalite-gold" />
+        <span className="mb-4 block h-1 w-12 rounded-full bg-gold-sheen" />
       )}
-      <h2 className={`font-heading text-3xl font-bold tracking-tight sm:text-4xl ${titleColor}`}>
-        {title}
-      </h2>
-      {subtitle && <p className={`mt-3 text-base sm:text-lg ${subColor}`}>{subtitle}</p>}
+      <h2 className="font-heading text-3xl font-bold tracking-tight text-kalite-cream sm:text-4xl">{title}</h2>
+      {subtitle && <p className="mt-3 text-base text-kalite-cream/65 sm:text-lg">{subtitle}</p>}
     </div>
   );
 }

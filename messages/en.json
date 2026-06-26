@@ -5,9 +5,12 @@
     "ogAlt": "Kalite Çikolata at Foodist Istanbul 2026 — Hall 1 / Stand 151B"
   },
   "nav": {
+    "home": "Home",
+    "brands": "Brands",
     "event": "Event",
     "products": "Products",
     "catalogues": "Catalogues",
+    "about": "About",
     "team": "Team",
     "visit": "Visit Us",
     "contact": "Contact",
@@ -23,6 +26,8 @@
   "hero": {
     "eyebrow": "Foodist Istanbul 2026 · International Food & Beverage Fair",
     "title": "Meet Kalite Çikolata at Foodist Istanbul 2026",
+    "titleLead": "Meet Kalite Çikolata at",
+    "titleHighlight": "Foodist Istanbul 2026",
     "subtitle": "From Istanbul to global shelves — export-ready confectionery lines from Türkiye.",
     "bookMeeting": "Book a B2B Meeting",
     "downloadCatalogues": "Download Catalogues",
@@ -36,7 +41,8 @@
   },
   "brandsStrip": {
     "label": "A house of three brands",
-    "visit": "Visit site"
+    "visit": "Visit site",
+    "explore": "Explore"
   },
   "event": {
     "eyebrow": "The event",
@@ -75,6 +81,7 @@
     "title": "Product families",
     "subtitle": "A focused range built for retail shelves and wholesale channels.",
     "visitBrand": "Visit brand site",
+    "viewCatalogue": "View catalogue",
     "nukka": { "tagline": "Our main, diverse confectionery range." },
     "prosweet": { "tagline": "Wafer and snack lines for fast-moving channels." },
     "jellyFunny": { "tagline": "Gummy and jelly products with playful, shelf-ready packaging." },
@@ -194,6 +201,73 @@
     "boothTitle": "We'll be ready to welcome you at Hall 1 / Stand 151B.",
     "dateShort": "Days",
     "yearShort": "Year"
+  },
+  "cta": {
+    "title": "Let's meet at Foodist Istanbul 2026",
+    "subtitle": "Book a B2B meeting with our export team or reach us on WhatsApp.",
+    "bookMeeting": "Book a meeting",
+    "whatsapp": "WhatsApp us"
+  },
+  "pages": {
+    "brands": {
+      "eyebrow": "Our brands",
+      "title": "A house of premium brands",
+      "subtitle": "Three brands, one export-ready partner from Türkiye."
+    },
+    "brand": {
+      "eyebrow": "Brand",
+      "officialSite": "Official website",
+      "contactCta": "Talk to our team"
+    },
+    "catalogues": {
+      "eyebrow": "Downloads",
+      "title": "Our catalogues",
+      "subtitle": "Open or download our latest catalogues, or request them on WhatsApp."
+    },
+    "team": {
+      "eyebrow": "The team",
+      "title": "Talk to our export team",
+      "subtitle": "The people who can move your order forward — before, during and after the fair."
+    },
+    "contact": {
+      "eyebrow": "Get in touch",
+      "title": "Book a meeting or request a catalogue",
+      "subtitle": "Tell us about your business and we'll follow up quickly."
+    },
+    "about": {
+      "eyebrow": "About us",
+      "title": "Confectionery, made for the world",
+      "subtitle": "An export-focused producer from Istanbul bringing chocolate, wafer, biscuit, cake and gummy ranges to global shelves.",
+      "storyTitle": "From Istanbul to global shelves",
+      "storyBody1": "Kalite Çikolata produces a wide range of confectionery built for international distribution — chocolate, wafer, biscuit, cake and gummy lines across many SKUs and weights.",
+      "storyBody2": "Through our brands NUKKA and PROSWEET, we serve importers, distributors and chain retailers with shelf-ready packaging, consistent quality and reliable export logistics.",
+      "stats": {
+        "brands": "Brands",
+        "languages": "Languages",
+        "skus": "SKUs",
+        "markets": "Markets"
+      }
+    }
+  },
+  "brandPages": {
+    "kalite": {
+      "tagline": "Our master brand — a full range of premium confectionery.",
+      "headline": "The Kalite Çikolata range",
+      "body": "Kalite Çikolata is the heart of our house of brands: a broad, export-ready confectionery portfolio crafted in Türkiye for retail shelves and wholesale channels worldwide.",
+      "points": { "p1": "Chocolate, wafer, biscuit, cake and gummy categories", "p2": "Shelf-ready packaging built for retail", "p3": "Reliable export documentation and logistics" }
+    },
+    "nukka": {
+      "tagline": "Our main, diverse confectionery range.",
+      "headline": "NUKKA — variety that moves",
+      "body": "NUKKA is our flagship range across core confectionery categories, designed to perform on fast-moving retail shelves with strong visual packaging.",
+      "points": { "p1": "Wide selection across categories", "p2": "Multiple weights and formats", "p3": "Eye-catching, shelf-ready design" }
+    },
+    "prosweet": {
+      "tagline": "Wafer and snack lines for fast-moving channels.",
+      "headline": "PROSWEET — wafers & snacks",
+      "body": "PROSWEET focuses on wafer and snack lines tailored for fast-moving wholesale and retail channels, with consistent quality and competitive formats.",
+      "points": { "p1": "Wafer and snack specialists", "p2": "Built for high-rotation channels", "p3": "Export-ready packaging and logistics" }
+    }
   },
   "footer": {
     "tagline": "From Istanbul to global shelves.",
