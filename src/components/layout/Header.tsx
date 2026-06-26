@@ -39,23 +39,20 @@ export function Header() {
       </a>
 
       <nav className="container-px flex h-16 items-center justify-between gap-4 lg:h-18">
-        <Link href="/" className="flex items-center gap-2.5" aria-label="Kalite Çikolata">
-          <BrandLogo
-            src={logos.kalite}
-            alt="Kalite Çikolata"
-            eager
-            imgClassName="h-10 w-auto sm:h-11 drop-shadow"
-            fallback={
-              <span className="flex items-center gap-2.5">
+        <Link href="/" className="-mt-1 flex items-center" aria-label="Kalite Çikolata">
+          <span className="inline-flex items-center rounded-2xl bg-white px-3 py-1.5 shadow-soft ring-1 ring-black/5">
+            <BrandLogo
+              src={logos.kalite}
+              alt="Kalite Çikolata"
+              eager
+              imgClassName="h-11 w-auto sm:h-12"
+              fallback={
                 <span className="grid h-9 w-9 place-items-center rounded-lg bg-red-sheen font-heading text-lg font-bold text-white">
                   K
                 </span>
-                <span className="hidden font-heading text-lg font-bold text-kalite-cream sm:block">
-                  Kalite <span className="text-kalite-gold-soft">Çikolata</span>
-                </span>
-              </span>
-            }
-          />
+              }
+            />
+          </span>
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">

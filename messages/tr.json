@@ -110,7 +110,10 @@
     "roles": {
       "salesSpecialist": "Satış Uzmanı",
       "exportManager": "İhracat Müdürü",
-      "salesRepresentative": "Satış Temsilcisi"
+      "salesRepresentative": "Satış Temsilcisi",
+      "operationsManager": "Operasyon Müdürü",
+      "logisticsCoordinator": "Lojistik Koordinatörü",
+      "marketingSpecialist": "Pazarlama Uzmanı"
     }
   },
   "form": {

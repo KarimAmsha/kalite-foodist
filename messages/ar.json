@@ -110,7 +110,10 @@
     "roles": {
       "salesSpecialist": "أخصائي مبيعات",
       "exportManager": "مدير تصدير",
-      "salesRepresentative": "مندوب مبيعات"
+      "salesRepresentative": "مندوب مبيعات",
+      "operationsManager": "مدير العمليات",
+      "logisticsCoordinator": "منسّق لوجستيات",
+      "marketingSpecialist": "أخصائي تسويق"
     }
   },
   "form": {

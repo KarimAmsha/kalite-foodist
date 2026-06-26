@@ -26,12 +26,12 @@ export function BrandsStrip() {
               href="/brands"
               className="group flex items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.04] px-6 py-5 backdrop-blur-md transition hover:-translate-y-0.5 hover:border-kalite-gold/40 hover:bg-white/[0.07]"
             >
-              <span className="flex items-center rounded-xl bg-white px-4 py-3">
+              <span className="flex items-center rounded-2xl bg-white px-5 py-4">
                 <BrandLogo
                   src={b.logo}
                   alt={b.name}
-                  imgClassName="h-12 w-auto max-w-[160px] object-contain"
-                  fallback={<span className={`font-heading text-xl font-bold ${b.accent}`}>{b.name}</span>}
+                  imgClassName="h-16 w-auto max-w-[190px] object-contain"
+                  fallback={<span className={`font-heading text-2xl font-bold ${b.accent}`}>{b.name}</span>}
                 />
               </span>
               <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold text-kalite-cream/55 transition group-hover:text-kalite-gold-soft">

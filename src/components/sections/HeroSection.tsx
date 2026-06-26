@@ -119,7 +119,7 @@ function StandPass({ t }: { t: ReturnType<typeof useTranslations> }) {
           <BrandLogo
             src={logos.foodist}
             alt="Foodist Istanbul 2026"
-            imgClassName="h-7 w-auto"
+            imgClassName="h-8 w-auto"
             fallback={<span className="text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-kalite-red">{t('passLabel')}</span>}
           />
         </span>

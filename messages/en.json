@@ -110,7 +110,10 @@
     "roles": {
       "salesSpecialist": "Sales Specialist",
       "exportManager": "Export Manager",
-      "salesRepresentative": "Sales Representative"
+      "salesRepresentative": "Sales Representative",
+      "operationsManager": "Operations Manager",
+      "logisticsCoordinator": "Logistics Coordinator",
+      "marketingSpecialist": "Marketing Specialist"
     }
   },
   "form": {

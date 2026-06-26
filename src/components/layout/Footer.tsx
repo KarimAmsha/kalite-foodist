@@ -25,7 +25,7 @@ export function Footer() {
               <BrandLogo
                 src={logos.kalite}
                 alt="Kalite Çikolata"
-                imgClassName="h-14 w-auto"
+                imgClassName="h-16 w-auto"
                 fallback={<span className="font-heading text-lg font-bold text-kalite-red">Kalite Çikolata</span>}
               />
             </span>
