@@ -81,6 +81,10 @@ header row populated):
 
 1. Open the Sheet (link above) → `Extensions → Apps Script`.
 2. Paste [`google-apps-script/Code.gs`](google-apps-script/Code.gs), save.
+   - Run `setup()` once (or `formatSheet()` on an existing sheet) to apply the
+     professional styling: branded header, frozen header + first column, column
+     widths, alternating rows, wrapped message/notes, plain-text phone column,
+     Status/Interest dropdowns and color-coded Status. Safe to re-run anytime.
 3. `Deploy → New deployment → Web app`:
    - **Execute as:** Me
    - **Who has access:** Anyone
