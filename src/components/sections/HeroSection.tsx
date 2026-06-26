@@ -113,8 +113,15 @@ function StandPass({ t }: { t: ReturnType<typeof useTranslations> }) {
   return (
     <div className="relative overflow-hidden rounded-[1.75rem] border border-kalite-gold/25 bg-white/[0.05] p-7 shadow-glow backdrop-blur-xl">
       <div aria-hidden className="absolute -end-12 -top-12 h-40 w-40 rounded-full bg-kalite-gold/15 blur-2xl" />
-      <div className="relative flex items-center justify-between">
-        <span className="grid h-11 w-11 place-items-center rounded-xl bg-red-sheen font-heading text-xl font-bold text-white">K</span>
+      <div className="relative flex items-center justify-between gap-3">
+        <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5">
+          <BrandLogo
+            src={logos.kalite}
+            alt="Kalite Çikolata"
+            imgClassName="h-9 w-auto"
+            fallback={<span className="grid h-9 w-9 place-items-center rounded-lg bg-red-sheen font-heading text-lg font-bold text-white">K</span>}
+          />
+        </span>
         <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5">
           <BrandLogo
             src={logos.foodist}
