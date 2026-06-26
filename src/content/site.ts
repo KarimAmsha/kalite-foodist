@@ -64,9 +64,7 @@ export const socials = {
 
 // Read at module scope so the values are inlined at build time.
 export const env = {
-  // TEMPORARY placeholder for the manager preview — real number removed.
-  // Restore via NEXT_PUBLIC_WHATSAPP_NUMBER (or here) before launch.
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '900000000000',
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '905419544437',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://kalite-foodist-2026.vercel.app',
   defaultLocale: process.env.NEXT_PUBLIC_DEFAULT_LOCALE || 'en',
   googleFormFallbackUrl: process.env.NEXT_PUBLIC_GOOGLE_FORM_FALLBACK_URL || '',
