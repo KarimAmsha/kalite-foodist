@@ -108,7 +108,9 @@
     "subtitle": "Siparişinizi ilerletecek kişilerle konuşun.",
     "contact": "İletişim",
     "roles": {
-      "salesSpecialist": "Satış Uzmanı"
+      "salesSpecialist": "Satış Uzmanı",
+      "exportManager": "İhracat Müdürü",
+      "salesRepresentative": "Satış Temsilcisi"
     }
   },
   "form": {

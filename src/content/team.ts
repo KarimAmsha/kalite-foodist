@@ -1,6 +1,8 @@
 // Team contacts shown in the "Meet our team" section.
-// Per the brief: only approved staff, no photos unless professional approved
-// images exist. More members will be added later.
+//
+// TEMPORARY: real team data has been removed for the manager preview.
+// Placeholder members only — no real names, phones or emails.
+// Restore the real team (and re-add WhatsApp numbers) before launch.
 
 export interface TeamMember {
   name: string;
@@ -17,13 +19,7 @@ export interface TeamMember {
 }
 
 export const team: TeamMember[] = [
-  {
-    name: 'Kerim Othman',
-    roleKey: 'salesSpecialist',
-    markets: 'EN · AR · TR',
-    whatsapp: '905382319857',
-    phone: '+90 (212) 803 60 00',
-    phoneHref: '+902128036000',
-    email: 'info@kalitecikolata.com.tr',
-  },
+  { name: 'Team Member 1', roleKey: 'salesSpecialist', markets: 'EN · AR · TR' },
+  { name: 'Team Member 2', roleKey: 'exportManager', markets: 'EN · TR' },
+  { name: 'Team Member 3', roleKey: 'salesRepresentative', markets: 'AR · EN' },
 ];

@@ -39,6 +39,7 @@ export function TeamSection() {
                     </div>
                   </div>
 
+                  {(m.whatsapp || m.phone || m.email) && (
                   <div className="flex flex-col gap-2 p-5">
                     {m.whatsapp && (
                       <a href={whatsappLink(tw('meeting'))} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl bg-[#25D366]/15 px-4 py-2.5 text-sm font-semibold text-[#3ee07e] transition hover:bg-[#25D366]/25">
@@ -56,6 +57,7 @@ export function TeamSection() {
                       </a>
                     )}
                   </div>
+                  )}
                 </div>
               </Reveal>
             );

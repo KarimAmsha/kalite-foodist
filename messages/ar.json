@@ -108,7 +108,9 @@
     "subtitle": "تحدث مع من يستطيع تحريك طلبك إلى الأمام.",
     "contact": "تواصل",
     "roles": {
-      "salesSpecialist": "أخصائي مبيعات"
+      "salesSpecialist": "أخصائي مبيعات",
+      "exportManager": "مدير تصدير",
+      "salesRepresentative": "مندوب مبيعات"
     }
   },
   "form": {

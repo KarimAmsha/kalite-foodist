@@ -108,7 +108,9 @@
     "subtitle": "Talk to the people who can move your order forward.",
     "contact": "Contact",
     "roles": {
-      "salesSpecialist": "Sales Specialist"
+      "salesSpecialist": "Sales Specialist",
+      "exportManager": "Export Manager",
+      "salesRepresentative": "Sales Representative"
     }
   },
   "form": {
