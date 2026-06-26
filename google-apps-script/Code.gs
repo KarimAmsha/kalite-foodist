@@ -56,6 +56,10 @@ function setup() {
  * Applies professional formatting to the existing sheet. Safe to re-run.
  */
 function formatSheet() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  // Show all times in the fair's local timezone.
+  try { ss.setSpreadsheetTimeZone('Europe/Istanbul'); } catch (e) {}
+
   var sheet = getSheet_();
   var lastRow = Math.max(sheet.getLastRow(), 2);
   var nCols = COLUMNS.length;
@@ -95,6 +99,9 @@ function formatSheet() {
 
   // Keep phone as plain text (avoids "+90..." becoming a formula).
   sheet.getRange(2, colIndex_('phone'), sheet.getMaxRows() - 1, 1).setNumberFormat('@');
+
+  // Clean date/time format for the created_at column.
+  sheet.getRange(2, colIndex_('created_at'), sheet.getMaxRows() - 1, 1).setNumberFormat('dd mmm yyyy, hh:mm');
 
   // Dropdowns for Status and Interest.
   applyDropdown_(sheet, colIndex_('status'), STATUS_OPTIONS);
@@ -169,6 +176,13 @@ function doPost(e) {
     var range = sheet.getRange(targetRow, 1, 1, COLUMNS.length);
     range.setNumberFormat('@');
     range.setValues([row]);
+
+    // Store created_at as a real, nicely formatted date/time (sortable),
+    // e.g. "26 Jun 2026, 10:12" in the sheet's timezone.
+    var created = data.created_at ? new Date(data.created_at) : new Date();
+    var createdCell = sheet.getRange(targetRow, colIndex_('created_at'));
+    createdCell.setNumberFormat('dd mmm yyyy, hh:mm');
+    createdCell.setValue(created);
 
     return ContentService
       .createTextOutput(JSON.stringify({ ok: true }))
