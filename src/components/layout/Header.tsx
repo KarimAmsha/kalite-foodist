@@ -39,13 +39,13 @@ export function Header() {
       </a>
 
       <nav className="container-px flex h-16 items-center justify-between gap-4 lg:h-18">
-        <Link href="/" className="-mt-1 flex items-center" aria-label="Kalite Çikolata">
-          <span className="inline-flex items-center rounded-2xl bg-white px-3 py-1.5 shadow-soft ring-1 ring-black/5">
+        <Link href="/" className="flex items-center" aria-label="Kalite Çikolata">
+          <span className="inline-flex items-center rounded-xl bg-white px-2.5 py-1.5 shadow-soft ring-1 ring-black/5">
             <BrandLogo
               src={logos.kalite}
               alt="Kalite Çikolata"
               eager
-              imgClassName="h-11 w-auto sm:h-12"
+              imgClassName="h-8 w-auto sm:h-9"
               fallback={
                 <span className="grid h-9 w-9 place-items-center rounded-lg bg-red-sheen font-heading text-lg font-bold text-white">
                   K
